@@ -50,6 +50,37 @@
   outline: none !important;
 }
 
+#textMail,
+#mail,
+#subject {
+  width: 500px;
+}
+
+#formContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#iframeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iframeClosed {
+  display: none;
+}
+.iframeOpen {
+  display: block;
+}
+
+#openPages {
+  width: 1500px;
+  height: 420px;
+  border: none;
+}
+
 footer {
   margin-top: 1%;
   text-align: center;
@@ -70,6 +101,9 @@ footer a:hover {
 }
 
 @media (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
   footer {
     margin-top: 3%;
   }
@@ -90,5 +124,20 @@ footer a:hover {
   }
   .carousel {
     margin-top: 20%;
+  }
+  .form-group label,
+  input {
+    width: 17rem;
+  }
+  #openPages {
+    margin-top: -30%;
+    width: 280px;
+    height: 393px;
+    border: none;
+  }
+  #textMail,
+  #mail,
+  #subject {
+    width: 250px;
   }
 }
