@@ -1,13 +1,13 @@
 window.onload = function () {
-  const contatoLink = document.querySelector(
-    "a[href='../projetobootstrap/pages/contato.html']"
-  );
+  const contatoLink = document.querySelector("a[href='./pages/contato.html']");
   const article = document.getElementById('principalBody');
   const section = document.createElement('section');
   const link = contatoLink.href;
 
   contatoLink.addEventListener('click', (event) => {
     event.preventDefault();
+
+    console.log(link);
 
     // Oculta as sections da página e abre apenas o iframe
     document.getElementById('recipeContentTitle').style.display = 'none';
